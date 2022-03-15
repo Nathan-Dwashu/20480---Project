@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(website_background.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            #navbar {
+                overflow: hidden;
+                background-color:black;
+            }
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 18px 15px;
+                text-decoration: none;
+                font-size: 17px;
+                margin-left: 8em;
+                font-weight: bold;
+            }
+
+            #navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            #navbar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .content {
+                padding: 16px;
+                position: absolute;
+                background-color:rgba(5, 25, 139, 0.3);
+                background-blend-mode: screen;
+                width: 70em;
+                height: 32em;
+                left: 7em;
+                top: 5em;
+                border-radius: 3em;
+                color: rgb(243, 114, 114);
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .sticky + .content {
+                padding-top: 60px;
+            }
+
+            #company_icon {
+                position: absolute;
+                left: 1em;
+            }
+
+            #company_name {
+                position: absolute;
+                background-color: lightblue;
+                color: midnightblue;
+                font-size: 2.5em;
+                font-weight: bold;
+                font-family: lucida;                
+                padding: 0.6em;
+                border-radius: 2em;
+                top: 0.3em;
+                left: 5.2em;
+            }            
+            
+            h1 {
+                position: absolute;
+                width: 16em;
+                height: 2.5em;
+                text-align: center;
+                top: 4em;
+                left: 3em;
+                color: orange;
+            }
+
+            p {
+                font-size: 18px;
+                position: absolute;
+                width: 23em;
+                height: 3.5em;
+                text-align: center;
+                top: 13em;
+                left: 8em;
+                color: orange
+            }
+
+            #ps5_pic {
+                position: absolute;
+                left: 56em;
+                top: 6em;
+                border-radius: 2em;
+            }
+
+            #gaming_pc_pic {
+                position: absolute;
+                left: 42em;
+                top: 6em;
+                border-radius: 2em;
+            }
+
+            button {
+                position: absolute;
+                font-size: 15px;
+                width: 15em;
+                top: 25em;
+                left: 15em;
+                background-color: palegreen;
+                font-weight: bold;
+                border-radius: 1em;
+            }
+
+            button:hover {
+                width: 20em;
+                height: 3.5em;
+                left: 13em;
+                top: 24.8em;
+                background-color: teal;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="company_icon.jpg" width="71" height="56" id="company_icon"/>
+                <a class="active" href="home.html">Home</a>
+                <a href="pc_console.html">PC and Console</a>
+                <a href="games.html">Games</a>
+                <a href="top_10_game.html">Top 10 Games</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="company_name">GAMINGIFY</div>
+            <h1>Everything about gaming in one place</h1>
+            <p>
+                We provide you with all the knowlegde and resources you will need 
+                to start you gaming journey. Buy games, consoles you name it we 
+                will have it.
+            </p>
+            <button onclick="document.location='top_10_game.html'">Click here to see the Top 10 computer games on the market</button>
+            <img src="./home/ps5.png" id="ps5_pic" width="210" height="300" />
+            <img src="./home/gaming_pc.jpg" id="gaming_pc_pic" width="210" height="300" />
+        </div>
+        
+
+        <script type="text/javascript">
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                }    
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

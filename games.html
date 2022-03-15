@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Games</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(website_background.jpg);
+                background-size: cover;
+                background-attachment: fixed;               
+            }
+
+            #navbar {
+                overflow: hidden;
+                background-color:black;
+            }
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 18px 15px;
+                text-decoration: none;
+                font-size: 17px;
+                margin-left: 8em;
+                font-weight: bold;
+            }
+
+            #navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            #navbar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .content {
+                padding-top: 60px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;                
+            }
+            
+            #company_icon {
+                position: absolute;
+                left: 1em;
+            }
+
+            h1 {
+                background-color: rgb(190, 135, 32);               
+                height: 3em;
+                width: 20em;
+                margin-left: 11em;
+                text-align: center;
+                padding-top: 0.5em;
+                border-radius: 0.8em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #pc_link {               
+                margin-left: 19.5em;
+                margin-top: 2em;
+            }
+
+            #pc_link:hover {
+                width: 320px;
+                height: 400px;
+                margin-left: 18.5em;
+                margin-top: 1em;                
+            }
+
+            #ps5_link {              
+                margin-left: 7em;
+                margin-top: 2em;
+            }
+
+            #ps5_link:hover {
+                width: 320px;
+                height: 400px;
+                margin-left: 8em;
+                margin-top: 1em;
+            }
+
+            .section {                
+                background-color: rgb(118, 126, 3);
+                margin-top: 4em;
+                height: 1.5em;
+                text-align: center;
+                padding: 0.4em;
+                padding-top: 0.7em;
+                border-radius: 0.8em;
+                font-size: 2em;              
+            }
+
+            #pc_games_section_link {
+                position: absolute;
+                top: 43em;
+            }
+
+            #console_games_section_link {
+                position: absolute;
+                top: 151em;
+            }
+
+            .game1 {
+                margin-left: 2em;
+            }
+
+            .game2 {
+                margin-left: 30em;
+                margin-top: -44.7em;
+            }
+
+            .game3 {
+                margin-left: 60em;
+                margin-top: -47.6em;
+            }
+
+            .game4 {
+                margin-left: 2em;
+                margin-top: 5em;
+            }
+
+            .game5 {
+                margin-left: 30em;
+                margin-top: -45.7em;
+            }
+
+            .game6 {
+                margin-left: 60em;
+                margin-top: -45.3em;
+            }
+
+            #console_game2 {
+                margin-top: -47.3em;
+            }
+
+            #console_game3 {
+                margin-top: -46.1em;
+            }
+
+            #console_game4 {
+                margin-top: 10em;
+            }
+
+            #console_game5 {
+                margin-top: -44.6em
+            }
+
+            #console_game6 {
+                margin-top: -45.7em;
+            }
+
+            .price_format {
+                font-size: 1.3em;
+            }
+
+            button {
+                width: 12em;
+                background-color: green;
+                border-radius: 2em;
+                margin-left: 6.5em;
+            }
+
+            button:hover {
+                background-color: greenyellow;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="company_icon.jpg" width="71" height="56" id="company_icon"/>
+                <a href="home.html">Home</a>
+                <a href="pc_console.html">PC and Console</a>
+                <a class="active" href="games.html">Games</a>
+                <a href="top_10_game.html">Top 10 Games</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </header>
+       
+        <div class="content">
+            <h1>Choose between PC Games and Console Games</h1>
+            
+            <a href="#pc_games_section_link" title="Go to the PC Games Section"><img src="./games/pc_game_cover.jpg" width="300" height="380" id="pc_link"></a>           
+            <a href="#console_games_section_link" title="Go to the Console Games Section"><img src="./games/console_game_cover.jpg" width="300" height="380" id="ps5_link"></a>
+           
+            <!--PC Game Section-->
+            <div id="pc_games_section_link"></div>
+            <h2 class="section">Computer Games</h2>
+
+            <div style="color: aqua;" class="game1"> 
+                <img src="./games/pc_game1.jpg"> 
+                <p>
+                   <h2>Far Cry New Dawn (PC)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R199</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: aqua;" class="game2"> 
+                <img src="./games/pc_game2.jpg"> 
+                <p>
+                   <h2>The Elder Scrolls V: Skyrim<br/> Legendary Edition (PC DVD-ROM)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R899</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: aqua;" class="game3"> 
+                <img src="./games/pc_game3.jpg"> 
+                <p>
+                   <h2>The Sims 4 (PC)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R495</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: aqua;" class="game4"> 
+                <img src="./games/pc_game4.jpg"> 
+                <p>
+                   <h2>Battlefield V (PC)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R499</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: aqua;" class="game5"> 
+                <img src="./games/pc_game5.jpg"> 
+                <p>
+                   <h2>Watch Dogs Special Edition<br/> Break Through Pack (PC)</h2>
+                    <ul>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R99</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: aqua;" class="game6"> 
+                <img src="./games/pc_game6.jpg"> 
+                <p>
+                   <h2>Tomb Raider (PC)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R211</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <!--Console Game Section-->
+            <div id="console_games_section_link"></div>
+            <h2 class="section" style="background-color: mediumblue;">Console Games</h2>
+
+            <div style="color: navajowhite;" class="game1"> 
+                <img src="./games/console_game1.jpg"> 
+                <p>
+                   <h2>Grand theft Auto V - Premium<br/> Edition - GTA V (PS4)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R588</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: navajowhite;" class="game2" id="console_game2"> 
+                <img src="./games/console_game2.jpg"> 
+                <p>
+                   <h2>FIFA 21 (XBOX ONE)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R908</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: navajowhite;" class="game3" id="console_game3"> 
+                <img src="./games/console_game3.jpg"> 
+                <p>
+                   <h2>Ratchet & Clank: Rift Apart (PS5)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R1,099</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: navajowhite;" class="game4" id="console_game4"> 
+                <img src="./games/console_game4.jpg"> 
+                <p>
+                   <h2>GOD OF WAR (PS4 HITS)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R305</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: navajowhite;" class="game5" id="console_game5"> 
+                <img src="./games/console_game5.jpg"> 
+                <p>
+                   <h2>Forza Horizon 3 (Xbox One)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R549</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+            <div style="color: navajowhite;" class="game6" id="console_game6"> 
+                <img src="./games/console_game6.jpg"> 
+                <p>
+                   <h2>Assassin's Creed Valhalla (Ps5)</h2>
+                    <ul>
+                        <li>Eligible for Cash on Delivery.</li>
+                        <li>Free Delivery Available</li>
+                        <li>Hassle-Free Exchanges & Returns for 30 Days.</li>
+                        <li>6-Month Limited Warranty.</li>
+                    </ul>
+                    <div class="price_format"><b>Price:</b> <i>R1,299</i></div>
+                        <br/>
+                    <button><h3>+ Add to Cart</h3></button>                    
+                </p>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                }    
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

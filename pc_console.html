@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pc's And Consoles</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(website_background.jpg);
+                background-size: cover;
+                background-attachment: fixed;               
+            }
+
+            #navbar {
+                overflow: hidden;
+                background-color:black;
+            }
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 18px 15px;
+                text-decoration: none;
+                font-size: 17px;
+                margin-left: 8em;
+                font-weight: bold;
+            }
+
+            #navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            #navbar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .content {
+                padding-top: 60px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;                
+            }
+            
+            #company_icon {
+                position: absolute;
+                left: 1em;
+            }
+
+            h1 {
+                background-color: rgb(132, 100, 190);               
+                height: 1.5em;
+                width: 15em;
+                margin-left: 13.5em;
+                text-align: center;
+                padding-top: 0.5em;
+                border-radius: 0.8em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #pc_link {               
+                margin-left: 8em;
+                margin-top: 2.5em;
+                border-radius: 2em;
+            }
+
+            #pc_link:hover {
+                width: 500px;
+                height: 380px;
+                margin-left: 7em;
+                margin-top: 2.3em;                
+            }
+
+            #ps5_link {
+                
+                margin-left: 7em;
+                margin-top: 2.5em;
+                border-radius: 2em;
+            }
+
+            #ps5_link:hover {
+                width: 500px;
+                height: 380px;
+                margin-left: 6em;
+                margin-top: 2.3em;
+            }
+
+            .section {                
+                background-color: red;
+                margin-top: 4em;
+                height: 1.5em;
+                text-align: center;
+                padding: 0.4em;
+                padding-top: 0.7em;
+                border-radius: 0.8em;
+                font-size: 2em;
+                
+            }
+
+            .pc_pic1 {
+                margin-left: 1.5em;
+                border-radius: 2em;
+            }
+
+            .pc_pic2 {
+                margin-left: 8em;
+                border-radius: 2em;
+            }
+
+            .pc_pic3 {
+                margin-left: 1.5em;
+                margin-top: 2em;
+                border-radius: 2em;
+            }
+
+            .pc_pic4 {
+                margin-left: 4em;
+                margin-top: 2em;
+                border-radius: 2em;
+            }
+
+            .pc_pic5 {
+                margin-left: 4em;
+                margin-top: 2em;
+                border-radius: 2em;
+            }
+
+            #pc_section_link {              
+                position: absolute;
+                top: 40em;
+            }
+
+            .console_pic1 {
+                margin-left: 1.5em;
+                border-radius: 2em;
+            }
+
+            .console_pic2 {
+                margin-left: 10em;
+                border-radius: 2em;
+            }
+
+            #ps5_pic {
+                margin-left: 11em;
+                border-radius: 2em;
+            }
+
+            #console_section_link {
+                position: absolute;
+                top: 152em;
+            }
+
+            iframe {
+                margin-left: 25em;
+                margin-top: 4em;
+                padding-bottom: 5em;
+                border-radius: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="company_icon.jpg" width="71" height="56" id="company_icon"/>
+                <a href="home.html">Home</a>
+                <a class="active" href="pc_console.html">PC and Console</a>
+                <a href="games.html">Games</a>
+                <a href="top_10_game.html">Top 10 Games</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </header>
+       
+        <div class="content">
+            <h1>Choose one to go to</h1>
+            
+            <a href="#pc_section_link" title="Go to the PC Section"><img src="./pc_console/pc_setup.jpg" width="480" height="360" id="pc_link"></a>
+            <a href="#console_section_link" title="Go to the Console Section"><img src="./pc_console/ps5.png" width="480" height="360" id="ps5_link"></a>
+
+            <!--Page link-->
+            <div id="pc_section_link"></div>
+            
+            <h2 class="section">Gaming Towers</h2>
+            <img src="./pc_console/tower1.jpg" class="pc_pic1" width="600" height="360" >
+            <img src="./pc_console/tower2.jpg" class="pc_pic2" width="500" height="360" >
+            <img src="./pc_console/tower3.jpg" class="pc_pic3" width="380" height="260" >
+            <img src="./pc_console/tower4.jpg" class="pc_pic4" width="380" height="260" >
+            <img src="./pc_console/tower5.jpg" class="pc_pic5" width="380" height="260" >
+
+            <h2 class="section" style="background-color: darkorchid;">Gaming Laptops</h2>
+            <img src="./pc_console/laptop1.jpg" class="pc_pic1" width="600" height="360" >
+            <img src="./pc_console/laptop2.jpeg" class="pc_pic2" width="500" height="360" >
+            <img src="./pc_console/laptop3.jpg" class="pc_pic3" width="380" height="260" >
+            <img src="./pc_console/laptop4.jpg" class="pc_pic4" width="380" height="260" >
+            <img src="./pc_console/laptop5.jpg" class="pc_pic5" width="380" height="260" >
+
+            <!--Page link-->
+            <div id="console_section_link">the</div>
+
+            <h2 class="section" style="background-color: deepskyblue;">Playstation 4 Consoles</h2>
+            <img src="./pc_console/ps4_1.jpg" class="console_pic1" width="550" height="320" >
+            <img src="./pc_console/ps4_2.jpg" class="console_pic2" width="550" height="320" >
+
+            <h2 class="section" style="background-color: midnightblue;">Playstation 5 Consoles</h2>
+            <img src="./pc_console/ps5_pic.jpg" id="ps5_pic" width="1000" height="500" >
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cxXvYJyBlc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <script type="text/javascript">
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                }    
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

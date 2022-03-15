@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(website_background.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            #navbar {
+                overflow: hidden;
+                background-color:black;
+            }
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 18px 15px;
+                text-decoration: none;
+                font-size: 17px;
+                margin-left: 8em;
+                font-weight: bold;
+            }
+
+            #navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            #navbar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .content {
+                padding: 16px;
+                position: absolute;
+                background-color:rgba(102, 11, 38, 0.4);
+                background-blend-mode: screen;
+                width: 40em;
+                height: 32em;
+                left: 40em;
+                top: 5em;
+                border-radius: 3em;
+                color: rgb(243, 114, 114);
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .sticky + .content {
+                padding-top: 60px;
+            }
+
+            #company_icon {
+                position: absolute;
+                left: 1em;
+            }
+
+            h1 {
+                margin-left: 5em;
+                font-size: 2.4em;
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+            h2 {
+                color: palevioletred;
+                position: absolute;
+                font-size: 3em;
+                text-align: center;
+                font-family: fantasy;
+                width: 11em;
+                left: 1em;
+                top: 5em;
+            }
+
+            h3 {
+                background-color: rgb(240, 69, 69);
+                position: absolute;
+                font-size: 1.7em;
+                padding: 0.8em;
+                border-radius: 2em;
+                left: 8em;
+            }
+            
+            input {
+                font-size: 0.9em;
+            }
+
+            #firstname {
+                font-size: 1.2em;
+                margin-left: 1.5em;
+                margin-top: 2em;
+            }
+
+            #lastname {
+                font-size: 1.2em;
+                margin-left: 18.5em;
+                margin-top: -2.6em;
+            }
+
+            #email {
+                font-size: 1.2em;
+                margin-left: 1.5em;
+                margin-top: 2em;
+            }
+
+            #phone {
+                font-size: 1.2em;
+                margin-left: 18.5em;
+                margin-top: -2.6em;
+            }
+
+            #problems {
+                font-size: 1.2em;
+                margin-left: 1.5em;
+                margin-top: 2em;
+            }
+
+            textarea {
+                font-size: 1em;
+            }
+
+            button {
+                font-size: 1.2em;
+                margin-top: 1em;
+                margin-left: 1.5em;
+                width: 5em;
+                height: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="company_icon.jpg" width="71" height="56" id="company_icon"/>
+                <a href="home.html">Home</a>
+                <a href="pc_console.html">PC and Console</a>
+                <a href="games.html">Games</a>
+                <a href="top_10_game.html">Top 10 Games</a>
+                <a class="active" href="contact_us.html">Contact Us</a>
+            </div>
+        </header>
+
+        <h3>Contact Us</h3>
+        <h2>Let us know how we can help you if you are experiencing any problems</h2>
+
+        <div class="content">
+            <h1>Let's help you</h1>
+
+            <form>
+                <div id="firstname">
+                    <label>First Name</label><br/>
+                    <input type="text" placeholder="Type Your First Name" title="Enter Your First Name" size="25" />
+                </div>
+
+                <div id="lastname">
+                    <label>Last Name</label><br/>
+                    <input type="text" placeholder="Type Your Last Name" title="Enter Your Last Name" size="25" />
+                </div>
+
+                <div id="email">
+                    <label>Email Address</label><br/>
+                    <input type="text" placeholder="Type Your Email Address" title="Enter Your Email Address" size="25" />
+                </div>
+
+                <div id="phone">
+                    <label>Phone Number</label><br/>
+                    <input type="text" placeholder="Type Your Phone Number" title="Enter Your Phone Number" size="25" />
+                </div>
+
+                <div id="problems">
+                    <label>Discuss any problems here</label><br/>   
+                    <textarea placeholder="Type your concerns here" title="Type your concerns here" rows="8" cols="64"></textarea>
+                </div>
+
+                <button type="submit" title="submit" onclick="windowShow()" >Submit</button>
+            </form>
+        </div>
+        
+
+        <script type="text/javascript">
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                }    
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+            function windowShow() {
+                window.alert("Your request was send succesfully");
+            }
+        </script>
+    </body>
+</html>
